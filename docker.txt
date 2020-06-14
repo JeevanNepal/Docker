@@ -1,0 +1,61 @@
+
+Docker:
+Docker is a set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers. 
+Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
+It is a tool designed to make it easier to create, deploy and run applications by using containers.
+Docker containers are lightweight alternative for virtual machine and it uses the host OS.
+
+Docker is a software platform for building applications based on containers — 
+small and lightweight execution environments that make shared use of the operating system kernel but otherwise run in isolation from one another.
+
+Docker Containers:
+A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another.
+
+
+Docker Container Image:
+A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application.
+
+
+Docker utilises LXC container:
+LXC is an operating-system-level virtualization method for running multiple isolated Linux systems on a control host using a single Linux kernel.
+
+
+
+Basic-Commands-on-Docker:
+Commmand to remove docker images by force: docker rmi -f image(name).
+ 
+ Run Command: Used to run the commands.
+ 
+ attach & detach commands.
+ attach command is used to run the docker container in foregroumf and docker detach command is used to run the docker container in backgroung.
+
+rm is uesd to remove the container: eg, docker rm +container name or ID.& rmi is used to remove docker images, eg: docker rmi +images name ot ID.
+
+docker pull command:
+It pulls the images of the os but does not run it.
+
+If we want to run the command inside the container than use the following:
+1. Ientify the container.
+2. docker exec (container ID) cat /etc/*release*
+
+TAG:latest
+It is used to run the other versions of the OS. Ex: docker run redis 4.0 instead of the latest version 5.0.
+
+
+exec runs a command inside the crunning container.
+
+Docker Has two editions:
+Community & Enterprise Edition. 
+
+
+Run - Port Mapping.
+
+dknasdfsalns
+ lnsadfnanasdn
+lsndkvnavndasn
+aslknvkana
+askdlvnasn
+askdnasnsa
+askdvnlannasd
+alkvnaads
+
