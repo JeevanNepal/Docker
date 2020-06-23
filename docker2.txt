@@ -1,3 +1,7 @@
 Steps to push files/ code in existing directory.
 
-1.
+1. git init
+2. add the files: git add .
+3. commit to the repository: git commit -m "...."
+4. connect to the repository:git remote add origin(url of your repository).
+5. git push origin -f(force push) master.
