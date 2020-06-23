@@ -1,4 +1,4 @@
-Steps to push files/ code in existing directory.
+Steps to push files/ code in existing repository.
 
 1. git init
 2. add the files: git add .
