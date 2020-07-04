@@ -47,4 +47,7 @@ Docker Has two editions:
 Community & Enterprise Edition. 
 
 
-Run - Port Mapping.
+Run - Port Mapping:
+Match the port, eg 8080 to 8080 to run the container in external browser.
+
+T0 save and persist the data:
