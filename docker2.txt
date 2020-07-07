@@ -33,3 +33,5 @@ it's called as master branch.
 git add . : to add one file in repository.
 
 git commit -m " just a message"
+
+git checkout: it is used to make new-branch or to go back to the old branch.
