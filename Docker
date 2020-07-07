@@ -1,5 +1,5 @@
 ﻿Docker Images:
-uploade
+
 How to create an own image? 
 
 
@@ -7,3 +7,7 @@ Why is docker images required?
 It is because you are not able to find a component or services that
  you want to use as a part of your services on docker hub already or
  you and your team have decided that the app developing will be dockarised for shiping and deplotment.
+
+
+
+ WHy do we need to make our own docker images?

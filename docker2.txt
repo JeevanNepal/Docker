@@ -14,7 +14,10 @@ Git Commands:
 2. git init command: Initialize a lick git repository.It this the git folder gets created and a branch is created which is by default and 
 it's called as master branch.
 
-3. git add command: Add one or more files to staging area.
+3. git add command: Add one or more 
+
+
+files to staging area.
 
 4. git diff command: View the changes made to the files.
 
@@ -33,3 +36,5 @@ it's called as master branch.
 git add . : to add one file in repository.
 
 git commit -m " just a message"
+
+git checkout:
