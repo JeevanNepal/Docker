@@ -12,6 +12,8 @@ m
 How to run docker images?
 docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
 
+creating docker images.
+
 
 
 
