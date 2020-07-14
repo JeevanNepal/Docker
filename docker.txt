@@ -48,6 +48,6 @@ Docker Has two editions:
 Community & Enterprise Edition. 
 
 
-Run - Port Mapping.
-dgdhdkjdsk
+How to create docker image of our own?
+First of all install any OS in my case it's Python using Ubuntu OS.
 
