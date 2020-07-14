@@ -50,5 +50,18 @@ Community & Enterprise Edition.
 
 Run - Port Mapping.
 
-docjer is just to make a container.
+Docker Images:
+
+How to create an own image? 
+
+
+Why is docker images required?
+It is because you are not able to find a component or services that
+ you want to use as a part of your services on docker hub already or
+ you and your team have decided that the app developing will be dockarised for shiping and deplotment.
+
+
+
+ Creating a new docker image.
+ 1. We cN CREATE
 
