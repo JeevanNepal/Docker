@@ -1,6 +1,3 @@
-Steps to install docker from terminal:
-go to www.docs.docker.com
-
 Docker:
 Docker is a set of platform as a service products that uses OS-level virtualization to deliver software in packages called containers. 
 Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
@@ -60,13 +57,11 @@ It is because you are not able to find a component or services that
  you want to use as a part of your services on docker hub already or
  you and your team have decided that the app developing will be dockarised for shiping and deplotment.clear
 
-How to create docker images?
 
 
-
-How to run docker images?
+How to run docker images for long in background?
 docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
 
 
-
+How to create docker images?
 
