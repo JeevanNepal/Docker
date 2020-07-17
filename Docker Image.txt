@@ -12,3 +12,8 @@ It is because you are not able to find a component or services that
 
 How to run docker images for long in background?
 docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
+
+Creating docker image of our own:
+Just install python but not all the dependencies.
+To install python on your docker container just type yum install python3.
+after installing the python now install the python pip-flask by typing pip install flask.
