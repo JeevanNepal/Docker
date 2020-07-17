@@ -12,7 +12,7 @@ A container is a standard unit of software that packages up code and all its dep
 
   
 Docker Container Image:
-A Docker container image is a lightweight, standalone, executable package of software that indockercludes everything needed to run an application.
+A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application.
 
 
 Docker utilises LXC container:
@@ -47,7 +47,19 @@ Docker Has two editions:
 Community & Enterprise Edition. 
 
 
-Run - Port Mapping:
-Match the port, eg 8080 to 8080 to run the container in external browser.
+How to create docker image of our own?
+First of all install any OS in my case it's Python using Ubuntu OS.
 
-To save and persist the data:
+Docker Images:
+
+Why is docker images required?
+It is because you are not able to find a component or services that
+ you want to use as a part of your services on docker hub already or
+ you and your team have decided that the app developing will be dockarised for shiping and deplotment.clear
+
+
+
+How to run docker images for long in background?
+docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
+
+
