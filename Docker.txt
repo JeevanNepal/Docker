@@ -47,22 +47,6 @@ Docker Has two editions:
 Community & Enterprise Edition. 
 
 
-How to create docker image of our own?
-First of all install any OS in my case it's Python using Ubuntu OS.
-
-Docker Images:
-
-Why is docker images required?
-It is because you are not able to find a component or services that
- you want to use as a part of your services on docker hub already or
- you and your team have decided that the app developing will be dockarised for shiping and deplotment.clear
 
 
 
-How to run docker images for long in background?
-docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
-
-
-How to create docker images?
-
-We can created docker imaged by creatinf the image of our own.
