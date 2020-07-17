@@ -65,3 +65,4 @@ docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
 
 How to create docker images?
 
+We can created docker imaged by creatinf the image of our own.
