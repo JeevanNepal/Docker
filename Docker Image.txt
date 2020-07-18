@@ -4,10 +4,13 @@ First of all install any OS in my case it's Python using Ubuntu OS.
 Install python: sudo yum install python.
 > sudo yum install python: run python to see the version of the python installed.
 > sudo yum install python flask using : sudo yum (-y) install python-flask.
-> to run a web server for a simple application, copy the source code and create it : cat > /opt/app.python
+> to run a web server for a simple application, copy the source code and create it : cat > /opt/app.py
 > paste the source code that you have coppied after you hit enter button.
 > follow the instructions given to run the application: FLASK_APP=app.py flask run --host=0.0.0.0
-> 
+
+
+How to access the web server for the application that we have created?
+
 
 Docker Images:
 
