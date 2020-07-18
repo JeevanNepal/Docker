@@ -15,3 +15,7 @@ if __name__ == "__main__":
 
 
     this is a code of a simple app which will be used to run the app in the browser.
+
+
+    How to dockerise an application?
+    
