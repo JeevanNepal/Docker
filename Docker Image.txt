@@ -1,7 +1,7 @@
 How to create docker image of our own?
 First of all install any OS in my case it's Python using Ubuntu OS.
 
-Install
+Install python
 
 Install python if you want to run a simple web application.
 > sudo yum install python: run python to see the version of the python installed.
