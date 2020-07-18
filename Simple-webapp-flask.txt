@@ -18,3 +18,9 @@ if __name__ == "__main__":
 
 
     How to dockerize an application?
+    yum update 
+    yum install python
+    yum install python flask
+    Create/copy application code to /opt/app.py
+
+    Run: FLASK_APP=app.py flask run --host=0.0.0.0

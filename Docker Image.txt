@@ -12,6 +12,7 @@ Install python: sudo yum install python.
 How to access the web server for the application that we have created?
 We need to access through the IP address of docker to access internally and to access externally we need to map the ports.
 
+
 Docker Images:
 
 Why is docker images required?
