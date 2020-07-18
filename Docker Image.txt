@@ -1,6 +1,9 @@
 How to create docker image of our own?
 First of all install any OS in my case it's Python using Ubuntu OS.
 
+Install python if you want to run a simple web application.
+> 
+
 Docker Images:
 
 Why is docker images required?
