@@ -32,5 +32,8 @@ if __name__ == "__main__":
     Now, we need to run the doocker build command.
     type: docker build .  , it will start to buil the image.
 
+    What is a docker file?
+    Docker file is a simple file with instructions to build an image.
 
+    
     How to build an image from docker file?
