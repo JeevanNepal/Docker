@@ -33,4 +33,4 @@ if __name__ == "__main__":
     type: docker build .  , it will start to buil the image.
 
 
-    How to obuild an image from docker file?
+    How to build an image from docker file?
