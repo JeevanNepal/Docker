@@ -34,6 +34,13 @@ if __name__ == "__main__":
 
     What is a docker file?
     Docker file is a simple file with instructions to build an image.
+    It is an automation of docker image creation.
 
-
+    Important instructions:
+    FROM
+    RUN
+    CMD
+    
+    
+    
     How to build an image from docker file?
