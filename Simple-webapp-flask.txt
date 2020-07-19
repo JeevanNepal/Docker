@@ -20,7 +20,7 @@ if __name__ == "__main__":
     How to dockerize an application?
     yum update 
     yum install python
-    yum install python flask
+    yum install -y python pip
     Create/copy application code to /opt/app.py
 
     Run: FLASK_APP=app.py flask run --host=0.0.0.0
@@ -35,5 +35,5 @@ if __name__ == "__main__":
     What is a docker file?
     Docker file is a simple file with instructions to build an image.
 
-    
+
     How to build an image from docker file?
