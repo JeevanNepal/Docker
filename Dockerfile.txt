@@ -53,5 +53,8 @@ if __name__ == "__main__":
     6. Run image to create container: docker run (image ID need to be provided).
 
 
-    If the output is shown than the docker image is created successfully and it is ran as well. 
+    If the output is shown than the docker image is created successfully and it is ran as well.
+
+    
+     
     
