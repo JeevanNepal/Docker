@@ -24,3 +24,4 @@ It is because you are not able to find a component or services that
 
 How to run docker images for long in background?
 docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
+fkjfj
