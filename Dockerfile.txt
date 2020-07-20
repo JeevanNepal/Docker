@@ -42,6 +42,10 @@ if __name__ == "__main__":
     RUN
     CMD
     
-    Step
+    Steps:
     
     How to build an image from docker file?
+    1. Create a directory named Dockerfile.
+    2. Got inside the directory, e.i, Dockerfiles and create an empty a file here using touch command: touch Dockerfile.
+    3. type vim Dockerfile to edit the file.
+    4. 
