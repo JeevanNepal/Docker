@@ -1,1 +1,5 @@
 How to push docker images in dockerhub?
+> First we need to login to dockerhub, just type docker login & provide your docker login credentials.
+> than we need to tag our account name to our application: your dockerhub name. Eg: jeevan121/my-simple-webapp.
+> Now you can check if it was created or not using: docker images.
+> Now run the push command: docker push jeevan121/my-simple-wabapp.
