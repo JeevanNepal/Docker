@@ -61,9 +61,10 @@ Environment Variables:
 docker run -e App_COLOR=blue simple-webapp-color
 we can use the above code to change the backgroung color of the apllication.
 
+
 How to find environment variable set on a container that's alerady running?
 Use the docker inspect command to inspect the properties of a running container: docker inspect blessful_hopper.
-Under the config section, we cna find the list of environment variables set on the container.
+Under the config section, we can find the list of environment variables set on the container.
 
 
     
