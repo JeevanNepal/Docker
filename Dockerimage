@@ -1,0 +1,26 @@
+How to create docker image of our own?
+First of all install any OS in my case it's Python using Ubuntu OS.
+
+Install python: sudo yum install python.
+> sudo yum install python: run python to see the version of the python installed.
+> sudo yum install python flask using : sudo yum (-y) install python-flask.
+> to run a web server for a simple application, copy the source code and create it : cat > /opt/app.py
+> paste the source code that you have coppied after you hit enter button.
+> follow the instructions given to run the application: FLASK_APP=app.py flask run --host=0.0.0.0
+
+
+How to access the web server for the application that we have created?
+We need to access through the IP address of docker to access internally and to access externally we need to map the ports.
+
+
+Docker Images:
+
+Why is docker images required?
+It is because you are not able to find a component or services that
+ you want to use as a part of your services on docker hub already or
+ you and your team have decided that the app developing will be dockarised for shiping and deplotment.clear
+
+
+
+How to run docker images for long in background?
+docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
