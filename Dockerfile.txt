@@ -25,8 +25,6 @@ It is because you are not able to find a component or services that
 How to run docker images for long in background?
 docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
 
-
-
 This is a code of a simple webapp which will be used to run the app in the browser.
 
 from flask import Flask
