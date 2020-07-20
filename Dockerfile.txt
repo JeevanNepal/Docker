@@ -1,0 +1,82 @@
+How to create docker image of our own?
+First of all install any OS in my case it's Python using Ubuntu OS.
+
+Install python: sudo yum install python.
+> sudo yum install python: run python to see the version of the python installed.
+> sudo yum install python flask using : sudo yum (-y) install python-flask.
+> to run a web server for a simple application, copy the source code and create it : cat > /opt/app.py
+> paste the source code that you have coppied after you hit enter button.
+> follow the instructions given to run the application: FLASK_APP=app.py flask run --host=0.0.0.0
+
+
+How to access the web server for the application that we have created?
+We need to access through the IP address of docker to access internally and to access externally we need to map the ports.
+
+
+Docker Images:
+
+Why is docker images required?
+It is because you are not able to find a component or services that
+ you want to use as a part of your services on docker hub already or
+ you and your team have decided that the app developing will be dockarised for shiping and deplotment.clear
+
+
+
+How to run docker images for long in background?
+docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
+
+This is a code of a simple webapp which will be used to run the app in the browser.
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def main():
+    return "Welcome!"
+
+@app.route('/how are you')
+def hello():
+    return 'I am good, how about you?'
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+
+
+    
+
+
+    How to dockerize an application?
+    yum update 
+    yum install python
+    yum install -y python pip
+    Create/copy application code to /opt/app.py
+
+    Run: FLASK_APP=app.py flask run --host=0.0.0.0
+
+    > create a directory
+    > create a file inside the directory eg, my-simple-webapp.
+    > paste the source code of hte webapp inside the file.
+
+    Now, we need to run the doocker build command.
+    type: docker build .  , it will start to buil the image.
+
+    What is a docker file?
+    Docker file is a simple file with instructions to build an image.
+    It is an automation of docker image creation.
+
+    Important instructions:
+    FROM
+    RUN
+    CMD
+    
+    Steps:
+    
+    How to build an image from docker file?
+    1. Create a file named Dockerfile.
+    2. Got inside the directory, e.i, Dockerfiles and create an empty a file here using touch command: touch Dockerfile.
+    3. type vim Dockerfile to edit the file, it leads us to an insert mode.
+    4. add instructions in docker file, : FROM, RUN CMD.
+    5. Build docker file to create image: docker build .
+    6. Run image to create container: docker run (image ID need to be provided).
+    7. 
+    
