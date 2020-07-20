@@ -1,1 +1,5 @@
-Docker Command & Entrypoint.
+Docker Command arguments & Entrypoint.
+
+Contaiers unlike the virtual machines are not mean to host the OS. It is mean to run a specific task or process.
+Once the task is completed the container exists & container only live as long as the process inside is alive.
+
