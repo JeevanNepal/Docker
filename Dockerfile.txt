@@ -1,5 +1,6 @@
 This is a code of a simple webapp which will be used to run the app in the browser.
 
+import os
 from flask import Flask
 app = Flask(__name__)
 
@@ -37,10 +38,11 @@ if __name__ == "__main__":
     Docker file is a simple file with instructions to build an image.
     It is an automation of docker image creation.
 
-    Important instructions:
+    Important instructions for docker:
     FROM
     RUN
     CMD
+
     
     Steps:
     
@@ -55,6 +57,6 @@ if __name__ == "__main__":
 
     If the output is shown than the docker image is created successfully and it is ran as well.
 
-    
-     
+
+
     
