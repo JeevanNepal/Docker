@@ -57,6 +57,7 @@ if __name__ == "__main__":
 
     If the output is shown than the docker image is created successfully and it is ran as well.
 
-
-
+Environment Variables:
+docker run -e App_COLOR=blue simple-webapp-color
+we can use the above code to change the backgroung color od the apllication.
     
