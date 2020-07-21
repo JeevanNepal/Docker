@@ -14,6 +14,8 @@ We need to access through the IP address of docker to access internally and to a
 
 
 Docker Images:
+Docker image is a read-only tamplet composed of layered filesystems used to share common files and create Docker 
+container instances.
 
 Why is docker images required?
 It is because you are not able to find a component or services that
