@@ -3,7 +3,7 @@ Docker Command arguments & Entrypoint.
 Contaiers unlike the virtual machines are not mean to host the OS. It is mean to run a specific task or process.
 Once the task is completed the container exists & container only live as long as the process inside is alive.
 
-How to speciy a different command to start a container rather ythan it's default one?
+How to specify a different command to start a container rather ythan it's default one?
 Just append a command to the docker run command in that way it overwrites the default docker command specified within the image.
 
 
