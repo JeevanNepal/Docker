@@ -1,6 +1,12 @@
 Docker Compose:
 Docker compose is a tool for defining & running multi-container docker applications.
 
+1. Install docker compose.
+If whether it is installed or not check with docker-compose --version.
+
+link to install docker compose: https://github.com/docker/compose/releases
+
+
 
 Yaml:
 
