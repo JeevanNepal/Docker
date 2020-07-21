@@ -17,3 +17,16 @@ CMD command and program ]               CMD sleep 5
 Command ["command","parameter1"]        CMD["sleep", "5"]
 
 To change the sleep time just append the command: eg, : docker run ubuntu-sleeper sleeep 10 / docker run ubuntu-sleeper 10.
+
+
+Here is where the Entrypoint instruction comes in handy.
+
+Entrypoint instruction is like a command line instruction as in we can specify the program that will be run when the 
+container starts.
+
+In command line instruction the parameter get replaced as a whole and in Entrypoint instruction the parameter gets 
+appended.
+
+How to modify the Entrypoint during runtime say from sleep 2.0 to 10?
+In this case we can overwrite it by Entrypoint option in the docker run command.    
+eg,: docker run --entrypoint sleep2.0 sleep 10. 
