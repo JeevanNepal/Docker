@@ -8,3 +8,12 @@ Just append a command to the docker run command in that way it overwrites the de
 
 Eg,: docker run ubuntu
      docker run ubuntu sleep 5 sec.
+
+How to make a container to run for permanently?
+Say we always want to run the container with sleep command.
+
+Command in shell form:                  Command is jason array format: 
+CMD command and program ]               CMD sleep 5           
+Command ["command","parameter1"]        CMD["sleep", "5"]
+
+To change the sleep time just append the command: eg, : docker run ubuntu-sleeper sleeep 10 / docker run ubuntu-sleeper 10.
