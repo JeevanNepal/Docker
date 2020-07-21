@@ -17,6 +17,9 @@ Docker Images:
 Docker image is a read-only tamplet composed of layered filesystems used to share common files and create Docker 
 container instances.
 
+Images layer always has their own image IDs which are always unique.
+
+
 Why is docker images required?
 It is because you are not able to find a component or services that
  you want to use as a part of your services on docker hub already or
