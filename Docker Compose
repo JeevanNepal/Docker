@@ -5,9 +5,9 @@ Docker compose is a tool for defining & running multi-container docker applicati
 If whether it is installed or not check with docker-compose --version.
 
 A. link to install docker compose: 1. https://github.com/docker/compose/releases
-                                2. using PIP: pin install -U docker-compose
+                                   2. using PIP: pin install -U docker-compose
 B. Create a docker compose files at any location on the system and the name of the file should be docker-compose.yml.
-C. Edit the file using Vi docker-compose.yml.
+C. Edit the file using Vi editor: type vi docker-compose.yml.
 D. 
 Yaml:
 
