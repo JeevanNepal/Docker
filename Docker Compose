@@ -18,7 +18,8 @@ webapp:
 database:
          image: redis
 
-STEP 3.Check the validity of the file by command: docker-compose config. 
+STEP 3.Check the validity of the file by command: docker-compose config.
+Step 4.  
 
 Yaml:
 
