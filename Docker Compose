@@ -66,3 +66,33 @@ worker:
 we can specify for links in this format as well: db:db = db
 
 
+
+Docker compose build:
+
+redis:
+     image: redis
+
+db:
+    image: postgres 9.4
+
+vote:
+    build: voting-app
+    ports:
+        - 5000:80
+    links:
+        - redis
+result:
+      build: result-app
+      ports:
+        - 5001:80
+      links:
+        - db
+
+worker:
+      build: worker
+      links:
+        - redis
+        - db
+
+
+
