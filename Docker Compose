@@ -8,7 +8,7 @@ STEP 1. link to install docker compose: 1. https://github.com/docker/compose/rel
                                         2. using PIP: pin install -U docker-compose
 STEP 2. Create a docker compose files at any location on the system and the name of the file should be docker-compose.yml.
  Edit the file using Vi editor: type vi docker-compose.yml.
- In the edit section write the below: This is just a sample votting application.
+ In the edit section write the below: This is just a sample voting application.
 Services:
 
 webapp:
