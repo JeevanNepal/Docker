@@ -8,7 +8,7 @@ STEP 1. link to install docker compose: 1. https://github.com/docker/compose/rel
                                         2. using PIP: pin install -U docker-compose
 STEP 2. Create a docker compose files at any location on the system and the name of the file should be docker-compose.yml.
  Edit the file using Vi editor: type vi docker-compose.yml.
- In the edit section write the below: This is just a sample votting application.
+ In the edit section write the below: This is just a sample voting application.
 Services:
 
 webapp:
@@ -26,3 +26,13 @@ Yaml:
 YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications
  where data is being stored or transmitted. YAML targets many of the same communications 
 applications as Extensible Markup Language but has a minimal syntax which intentionally differs from SGML.
+
+
+We will run the following for runing the application:
+
+> first of all run the docker run command: docker run -d --name=redis redis.
+> next we will deploy the postgres sql db by running the docker run postgres command: docker run -d --name=db.
+> next run the front end app and run the instance of a voting app by running the instance of voting-app: docker run -d --name=vote -p 5000:80 voting-app.
+> next we will deploy the result web application that showa the results to the user: docker run -d --name=result -p 5001:80
+  result-app.
+> 
