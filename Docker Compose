@@ -36,4 +36,33 @@ We will run the following for runing the application:
 > next we will deploy the result web application that showa the results to the user: docker run -d --name=result -p 5001:80 --link db:db result-app
   result-app.
 > finally we deploy hte worker by running hte instance of the worker image: docker run -d --name=worker --link redis:redis --link db:db worker.
-> link is a commend line option which can be used to link two containers 
+> link is a commend line option which can be used to link two containers.
+
+Simple steps to add the components for voting app.
+redis:
+     image: redis
+
+db:
+    image: postgres 9.4
+
+vote:
+    image: voting-app
+    ports:
+        - 5000:80
+    links:
+        - redis
+result:
+      image: result-app
+      ports:
+        - 5001:80
+      links:
+        - db
+
+worker:
+      image: worker
+      links:
+        - redis
+        - db
+we can specify for links in this format as well: db:db = bd
+
+
