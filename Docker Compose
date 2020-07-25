@@ -95,5 +95,26 @@ worker:
         - db
 
 
+        Docker compose-versions:
+
+        version 1:
+        redis:
+            image: redis
+
+        database:
+            image: postgres 9.4
+
+        vote:
+            image: voting-app
+
+        ports: 
+           -5000
+
+        links:   
+            db:db = db
+
+        
+
+
 
 
