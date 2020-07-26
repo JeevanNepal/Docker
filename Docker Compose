@@ -106,33 +106,51 @@ worker:
 
         vote:
             image: voting-app
-
-        ports: 
-           -5000
-
-        links:   
-            db:db = db
+            ports: 
+              -5000:80
+            links:   
+              db:db = db
 
 
 
 
-        version 2:
+        Version 2:
         version:2
         services:
-             redis:                      
-            image: redis
+            redis:                      
+              image: redis
+
+            database:
+              image: postgres 9.4
+
+            vote:
+              image: voting-app
+              ports: 
+                -5000:80
+              depends_on:
+                db:db = db 
+
+
+
+
+     Version 3:
+     services:
+        redis:                      
+          image: redis
 
         database:
             image: postgres 9.4
 
         vote:
             image: voting-app
+            ports: 
+              -5000:80
 
-        ports: 
-           -5000
 
-        links:   
-            db:db = db 
+NETWORK IN DOCKER COMPOSE:
+
+
+           
 
         
 
