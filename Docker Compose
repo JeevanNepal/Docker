@@ -111,6 +111,9 @@ Version 1:
       links:   
           db:db = db
 
+    result:
+      image: result    
+
 
 
 
@@ -129,7 +132,9 @@ Version 2:
               -5000:80
             depends_on:
               db:db = db 
-
+          
+          result:
+            image: result
 
 
 
@@ -146,7 +151,9 @@ Version 3:
             image: voting-app
             ports: 
               -5000:80
-
+        
+        result:
+           image: result
 
 NETWORK IN DOCKER COMPOSE:
 
