@@ -18,7 +18,7 @@ Command ["command","parameter1"]        CMD["sleep", "5"]
 
 To change the sleep time just append the command: eg, : docker run ubuntu-sleeper sleeep 10 / docker run ubuntu-sleeper 10.
 
-
+ 
 Here is where the Entrypoint instruction comes in handy.
 
 Entrypoint instruction is like a command line instruction as in we can specify the program that will be run when the 
