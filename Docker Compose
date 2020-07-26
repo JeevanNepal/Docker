@@ -95,7 +95,7 @@ worker:
         - db
 
 
-        Docker compose-versions:
+Docker compose-versions:
 
         version 1:                 
         redis:                      
@@ -114,9 +114,9 @@ worker:
 
 
 
-        Version 2:
-        version:2
-        services:
+Version 2:
+    version:2
+    services:
             redis:                      
               image: redis
 
@@ -134,6 +134,7 @@ worker:
 
 
      Version 3:
+     version:3
      services:
         redis:                      
           image: redis
