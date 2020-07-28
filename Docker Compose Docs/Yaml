@@ -4,5 +4,7 @@ where data is being stored or transmitted. YAML targets many of the same communi
 applications as Extensible Markup Language but has a minimal syntax which intentionally differs from SGML.
 
 
+Yaml file is user to represent data and here it represents configuration data.
+
 
 Ansible play book are text files / configuratin files that are return in a particular format called Yaml. 
