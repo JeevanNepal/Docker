@@ -5,4 +5,4 @@ applications as Extensible Markup Language but has a minimal syntax which intent
 
 
 
-Ansible plat book are text files / configuratin files that are return in a particular format called Yaml. 
+Ansible play book are text files / configuratin files that are return in a particular format called Yaml. 
