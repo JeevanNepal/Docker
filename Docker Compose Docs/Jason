@@ -12,6 +12,9 @@ Ex:
  "price": "$20,000"
  }
  }
+ 
+ query ot fetch jason:
+ $car.color
    
 
 
