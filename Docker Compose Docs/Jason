@@ -14,7 +14,7 @@ Ex:
  }
  
  query ot fetch jason:
- $car.color
+ $.car.color
    
 
 
