@@ -54,6 +54,52 @@ JASON PATH DOCTIONARY:
  ]                                    $[3]                                  ["jeep"]
  
  
+ JASON PATH DICTIONARY & LISTS:
+ DATA                                                      Query                                         Result
+ {                                                         Get the mocel of the 2nd Wheel                 {
+                                                             $.car.wheel[1].model                           "model": "XXHJHUDdBJ"
+                                                                                                            "location: "front-right" 
+                                                                                                             }
+                                                           
+ "car": {
+ "color": "blue",
+ "price": "$20,000"
+ "wheels": [
+                  
+        {
+         "model": "XXHJHUDBJ"
+         "location: "front-left" 
+         },
+         {
+         "model": "XXHJHUDdBJ"
+         "location: "front-right" 
+         },
+         {
+         "model": "XXHerJHUDBJ"
+         "location: "back-left" 
+         },
+         {
+         "model": "XXHJHUDBJ"
+         "location: "baxk-right" 
+         }
+         ]
+         
+ }
+ 
+ 
+ JASON PATH - CRITERIA:
+ DATA:                             Query                               Result
+ [
+  3,
+  4,
+  5,
+  6,
+  67,
+  67,
+  45
+ ]
+ 
+ 
 
 jason2yaml.com it can help us to convert jason format to yaml.
 
