@@ -58,7 +58,7 @@ JASON PATH DOCTIONARY:
  DATA                                                      Query                                         Result
  {                                                         Get the mocel of the 2nd Wheel                 {
                                                              $.car.wheel[1].model                           "model": "XXHJHUDdBJ"
-                                                                                                            "location: "front-right" 
+                                                                                                            
                                                                                                              }
                                                            
  "car": {
