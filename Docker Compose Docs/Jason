@@ -4,3 +4,28 @@ store and transmit data objects consisting of attribute–value pairs and array 
 
  
 Jason Path:
+It a query language that help to parse data represented in a jason or yaml format.
+Ex:
+{
+ "car": {
+ "color": "blue",
+ "price": "$20,000"
+ }
+ }
+   
+
+
+OBJECTIVES:
+YAML 
+YAML vs JASON
+JASON PATH
+    > Dictionaries
+    > Lists
+    > Lists & Dictionaries
+    > Criteria
+Practice Exercises:
+
+jason2yaml.com it can help us to convert jason format to yaml.
+
+
+
