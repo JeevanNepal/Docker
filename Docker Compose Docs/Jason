@@ -45,12 +45,15 @@ JASON PATH DOCTIONARY:
  
  
  JASON PATH -LISTS:
- [
- car
- truck
- bus
- jeep
- ]
+ Data                                Query                               Result
+ [                                  Get the 1st Element
+0 "car"                               $[0]                                  ["car"]
+1 "truck"
+2 "bus"
+3 "jeep"                            Get the 4th Element                   
+ ]                                    $[3]                                  ["jeep"]
+ 
+ 
 
 jason2yaml.com it can help us to convert jason format to yaml.
 
