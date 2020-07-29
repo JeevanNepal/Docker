@@ -89,7 +89,11 @@ JASON PATH DOCTIONARY:
  
  JASON PATH - CRITERIA:
  DATA:                             Query                               Result
- [
+ [                                  Get all number greated than 40     [
+                                                                        67,
+                                                                        67,
+                                                                        45
+                                                                         ]
   3,
   4,
   5,
