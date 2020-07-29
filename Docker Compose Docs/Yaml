@@ -39,7 +39,12 @@ Orange:
     Iron: 4
     
     Number of spaces is the key value in yaml, same space must be there of the configuration of files.
+    
+    Dictionary is an unordered list:
+    List is an ordered list:
 
 
 
 Ansible play book are text files / configuratin files that are return in a particular format called Yaml. 
+
+
