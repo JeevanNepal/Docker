@@ -13,7 +13,9 @@ Ex:
  }
  }
  
- query ot fetch jason:
+ query to fetch elements from jason:
+ Root Element is $ for jason:
+ Ex:
  $.car.color
    
 
@@ -27,6 +29,28 @@ JASON PATH
     > Lists & Dictionaries
     > Criteria
 Practice Exercises:
+
+JASON PATH DOCTIONARY:
+{
+ "car": {
+ "color": "blue",
+ "price": "$20,000"
+ }
+ }
+ 
+ query to fetch elements from jason:
+ Root Element is $ for jason:
+ Ex:
+ $.car.color
+ 
+ 
+ JASON PATH -LISTS:
+ [
+ car
+ truck
+ bus
+ jeep
+ ]
 
 jason2yaml.com it can help us to convert jason format to yaml.
 
