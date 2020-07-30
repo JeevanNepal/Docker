@@ -149,7 +149,7 @@ How to JSON PATH in Kubectl?
 JSON PATH ON KUBERNETES:
 
 OBJECTIVES:
-> JSON PATH in Kubectl
+> JSON PATH in Kubectl(Kubecontrol)
 > Why JSON PATH?
 > View and interpret Kubectl output in JSON format.
 > How to use JSON PATH with Kubectl?
