@@ -151,5 +151,11 @@ JSON PATH ON KUBERNETES:
 OBJECTIVES:
 > JSON PATH in Kubectl
 > Why JSON PATH?
-> View and interpret Kubectl output in JSON
+> View and interpret Kubectl output in JSON format.
+> How to use JSON PATH with Kubectl?
+> JSON PATH examples.
+> Loops - Range
+> Custom-column
+> sort
+
 
