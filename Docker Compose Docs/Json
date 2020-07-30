@@ -159,3 +159,13 @@ OBJECTIVES:
 > sort
 
 
+How to use JSON PATH with Kubectl?
+> Foru steps are need to be followed for JSON PATH with Kubectl.
+1. identify the Kubectl command. Ex,: Kubectl get node -0 json, kubectl get pods -0 json.
+2. Familiaze with JSON output.
+3. Form the JSON PATH query.
+4. Use the JSON PATH query with kubectl command.
+     ex: kubectl get pods -0=jsonpath= .items[0].spec.container[0].image.
+
+
+
