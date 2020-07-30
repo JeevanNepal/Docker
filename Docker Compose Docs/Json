@@ -1,10 +1,10 @@
-What is Jason?
+What is Json?
 JavaScript Object Notation is an open standard file format, and data interchange format, that uses human-readable text to 
 store and transmit data objects consisting of attribute–value pairs and array data types.
 
  
-Jason Path:
-It a query language that help to parse data represented in a jason or yaml format.
+Json Path:
+It a query language that help to parse data represented in a json or yaml format.
 Ex:
 {
  "car": {
@@ -13,8 +13,8 @@ Ex:
  }
  }
  
- query to fetch elements from jason:
- Root Element is $ for jason:
+ query to fetch elements from json:
+ Root Element is $ for json:
  Ex:
  $.car.color
    
@@ -23,14 +23,14 @@ Ex:
 OBJECTIVES:
 YAML 
 YAML vs JASON
-JASON PATH
+SON PATH
     > Dictionaries
     > Lists
     > Lists & Dictionaries
     > Criteria
 Practice Exercises:
 
-JASON PATH DOCTIONARY:
+JSON PATH DOCTIONARY:
 {
  "car": {
  "color": "blue",
@@ -44,7 +44,7 @@ JASON PATH DOCTIONARY:
  $.car.color
  
  
- JASON PATH -LISTS:
+ JSON PATH -LISTS:
  Data                                Query                               Result
  [                                  Get the 1st Element
 0 "car"                               $[0]                                  ["car"]
@@ -54,7 +54,7 @@ JASON PATH DOCTIONARY:
  ]                                    $[3]                                  ["jeep"]
  
  
- JASON PATH DICTIONARY & LISTS:
+ JSON PATH DICTIONARY & LISTS:
  DATA                                                      Query                                         Result
  {                                                         Get the mocel of the 2nd Wheel                 {
                                                              $.car.wheel[1].model                           "model": "XXHJHUDdBJ"
@@ -87,7 +87,7 @@ JASON PATH DOCTIONARY:
  }
  
  
- JASON PATH - CRITERIA:
+ JSON PATH - CRITERIA:
  DATA:                             Query                               Result
  [                                  Get all number greated than 40     [
                                                                         67,
@@ -105,10 +105,10 @@ JASON PATH DOCTIONARY:
  
  
 
-jason2yaml.com it can help us to convert jason format to yaml.
+json2yaml.com it can help us to convert jason format to yaml.
 
 
-JASON PATH - WILDCARD:
+JSON PATH - WILDCARD:
 Data:
 {
 "car": {
@@ -145,5 +145,11 @@ Result:
 
 
 
-How to JASON PATH in Kubectl?
+How to JSON PATH in Kubectl?
+JSON PATH ON KUBERNETES:
+
+OBJECTIVES:
+> JSON PATH in Kubectl
+> Why JSON PATH?
+> View and interpret Kubectl output in JSON
 
