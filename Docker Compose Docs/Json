@@ -168,4 +168,8 @@ How to use JSON PATH with Kubectl?
      ex: kubectl get pods -0=jsonpath= .items[0].spec.container[0].image.
 
 
+JSON PATH by Sort:
+kubectl get node -- sort-by= .status.capacity.cup
+
+
 
