@@ -1,0 +1,5 @@
+https://github.com/dockersamples/example-voting-app.git
+
+git clone for the above ahs been done inorder to make the demo voting-app from the github repository.
+
+Now we need to build the docker image for those three:  
