@@ -31,3 +31,6 @@ Now we will duild the docker image by running the docker buils image and we will
 ex: docker build . -t voting-app
 
 Just check by typing docker images we can see the voting-app image running.
+
+Now we can run a container by running the container: docker run -p 5000:80 voting-app and -p is used to publish the output of the container 
+my mapping hte container to port 5000:80.
