@@ -51,3 +51,12 @@ Now we can run an instance of voting-app.
 Add a link to the redis server: docker run -p 5000:80 --link redis:redis voting-app
 
 Now the voting should be successful as the container is successful to establish a connection to redis.
+
+Now we will run the instance of db: docker run -d --name=db postgres:9.4
+
+
+Now go to worker directory and buils the worker image for worker:
+docker build . -t worker-app.
+
+We will runn the instance of a worker-app but it needs two links, one for redis and the other for postgres:
+docker run --link redis:redis --link db:db worker-app
