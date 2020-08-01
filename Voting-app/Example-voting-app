@@ -42,5 +42,7 @@ Now,first run an instance of redis in dettached mode: docker run -d -name:redis 
 By now you must have the instance of redis running in dettached mode.
 
 
+Now we can run an instance of voting-app.
+Add a link to the redis server: docker run -p 5000:80 --link redis:redis voting-app
 
-Now add a link to the redis server: docker run -p 5000:80 --link redis:redis voting-app
+Now the voting should be successful as the container is successful to establish a connection to redis.
