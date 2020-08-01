@@ -36,4 +36,11 @@ Now we can run a container by running the container: docker run -p 5000:80 votin
 my mapping hte container to port 5000:80.
 
 Now run the mapped container in browser by mapping with the ip address of your host with port 5000, ex: 198******:5000
-it sjould give you the output for cat and dog.
+it should give you the output for cat and dog.
+
+Now,first run an instance of redis in dettached mode: docker run -d -name:redis redis.
+By now you must have the instance of redis running in dettached mode.
+
+
+
+Now add a link to the redis server: docker run -p 5000:80 --link redis:redis voting-app
