@@ -61,3 +61,9 @@ docker build . -t worker-app.
 
 We will runn the instance of a worker-app but it needs two links, one for redis and the other for postgres:
 docker run --link redis:redis --link db:db worker-app
+
+Now we to build the resul-app known as resulting app.
+Build a result-app: docker build . -t result-app
+
+Finally, we can now run the result-app: dockwr run -p 5001(port the result-app to 5001 as 5000 is already occupied)
+and link to db(--link bd:bd) result-app: docker run -p 5001 --link db:db result-app.
