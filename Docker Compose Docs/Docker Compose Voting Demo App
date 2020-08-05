@@ -1,0 +1,10 @@
+A Dockerfile is a simple text file that contains the commands a user could call to assemble an image whereas 
+Docker Compose is a tool for defining and running multi-container Docker applications. 
+Docker Compose define the services that make up your app in docker-compose.
+
+
+Docker Compose installation process for linux:
+curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+Now set the executable permission to the binary file: sudo chmod +x /usr/local/bin/docker-compose
+
