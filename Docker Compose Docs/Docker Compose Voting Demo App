@@ -4,7 +4,38 @@ Docker Compose define the services that make up your app in docker-compose.
 
 
 Docker Compose installation process for linux:
-curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo(only if not a super user)curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 Now set the executable permission to the binary file: sudo chmod +x /usr/local/bin/docker-compose
 
+Create a docker compose file with the name docker-compose.yml
+
+Now we need to identiy all the services required and list them:
+redis:
+  image: redis
+  
+
+db: 
+  image: postgres
+  
+
+vote:
+  image: voting-app
+  ports: 
+    - 5000:80
+  links:
+    - redis
+
+worker:
+  image: worker-app
+  links:
+    - db
+    - redis  
+
+result:
+  image: result-app
+  ports: 5001:80
+  links: 
+    - db
+
+    
