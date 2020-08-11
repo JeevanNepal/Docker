@@ -1,3 +1,45 @@
 Docker Engine is an open source containerization technology for building and containerizing your applications.
  Docker Engine acts as a client-server application with: A server with a long-running daemon process dockerd .
  APIs which specify interfaces that programs can use to talk to and instruct the Docker daemon.
+
+
+It can be simply refered to a host docker installed on it.
+
+When we install docker on a host we are actually installing three different components:
+1. Docker Daemon
+2. REST API Server
+3. Docker client
+
+1: Docker Daemon: It is a background processes that manages docker objects such as, docker images, containers, 
+   volumes and networks.
+
+2: REST API Server: It ia an API interface that programs can used to interact to deamon and provide instructions.
+   Own tools can also be created using it.
+
+3: Docker CLI: It's nothing but command line interface. 
+
+
+CONTAINERIZATION:
+Docker uses namespace to isolate work space.
+
+process ID                         Unix
+          \                      Timesharing
+           \                     /
+            \                   /
+             \                 /
+              \               /
+               \             /
+                  Namespace    
+                /           \
+               /             \
+              /               \
+             /                 \
+            /                   \
+           /                     \
+Networks                          Mount
+       
+
+        
+              Interprocess
+
+
