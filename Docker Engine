@@ -3,4 +3,12 @@ Docker Engine is an open source containerization technology for building and con
  APIs which specify interfaces that programs can use to talk to and instruct the Docker daemon.
 
 
-It can be simply refered to a host docker installed on it. 
+It can be simply refered to a host docker installed on it.
+
+When we install docker on a host we are actually installing three different components:
+1. Docker Daemon
+2. REST API Server
+3. Docker client
+
+1: Docker Daemon: It is a background processes that manages docker objects such as, docker images, containers, 
+volumes and networks.
