@@ -40,4 +40,17 @@ Networks              |           Mount
                       |       
                 Interprocess
 
+Namespace -PID
+
+Container sharing same resources:
+cgroups: Docker uses cgroup(control groups) to restrict the amount of hardware resources allocated to each container. 
+
+              Linux System
+
+Docker Container               Docker Container                Docker Container
+
+
+
+
+    CPU                                       Memory
 
