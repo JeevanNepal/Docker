@@ -30,16 +30,14 @@ process ID                         Unix
               \               /
                \             /
                   Namespace    
-                /           \
-               /             \
-              /               \
-             /                 \
-            /                   \
-           /                     \
-Networks                          Mount
-       
-
-        
-              Interprocess
+                /     |     \
+               /      |      \
+              /       |       \
+             /        |        \
+            /         |         \
+           /          |          \
+Networks              |           Mount
+                      |       
+                Interprocess
 
 
