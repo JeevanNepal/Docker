@@ -54,3 +54,5 @@ Docker Container               Docker Container                Docker Container
 
     CPU                                       Memory
 
+
+docker run --cpus=.5 ubuntu: it can restrict the containers to take up only 50% of the host resources.
