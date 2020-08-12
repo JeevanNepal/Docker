@@ -45,7 +45,7 @@ Namespace -PID
 Container sharing same resources:
 cgroups: Docker uses cgroup(control groups) to restrict the amount of hardware resources allocated to each container. 
 
-              Linux System
+                            Linux System
 
 Docker Container               Docker Container                Docker Container
 
@@ -56,3 +56,4 @@ Docker Container               Docker Container                Docker Container
 
 
 docker run --cpus=.5 ubuntu: it can restrict the containers to take up only 50% of the host resources.
+docker run --memory=100m ubuntu: limits the amount of memory used to to 100mb.
