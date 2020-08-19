@@ -1,0 +1,5 @@
+Docker storage drivers and file systems:
+
+File Systems:
+When we install docker, it creates a folder: /var/lib/docker and it has multiple folders under it such as aufs, containers,
+volumes, images etc.
