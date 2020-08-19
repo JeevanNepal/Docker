@@ -3,3 +3,57 @@ Docker storage drivers and file systems:
 File Systems:
 When we install docker, it creates a folder: /var/lib/docker and it has multiple folders under it such as aufs, containers,
 volumes, images etc.
+
+Layered Architrcture:
+
+Dockerfile1 
+                               
+FROM Ubuntu                               
+RUN apt-get update python                 
+RUN pip install flask flask-mysql         
+COPY. /opt/slurce-code                    
+ENTRYPOINT FLASK_APP =  /opt/slurce-code  
+
+docker build Dockerfile1 -t 
+ |
+ |- Layer1: Base Ubuntu Layer      : 120MB
+ |
+ |- Layer2: Changes in apt packages: 306 MB
+ |
+ |- Layer3: Changes in pip packages: 6.3 MB
+ |
+ |- Layer4: Source code            : 226KB
+ |
+ |- Layer5: update Entrypoint      : 0 KB
+
+
+
+To understand the advantages of Architrcture layer let's see the another application:
+
+Dockerfile2
+
+FROM Ubuntu                               
+RUN apt-get update python                 
+RUN pip install flask flask-mysql         
+COPY. /opt/slurce-code                    
+ENTRYPOINT FLASK_APP =  /opt/slurce-code
+
+docker build Dockerfile1 -t
+|
+ |- Layer1: Base Ubuntu Layer      : 0B
+ |
+ |- Layer2: Changes in apt packages: 0B
+ |
+ |- Layer3: Changes in pip packages: 0B
+ |
+ |- Layer4: Source code            : 229B
+ |
+ |- Layer5: update Entrypoint      : 0 KB
+
+ As docker uses the same firat three layers from previous application, it will not build the first three layers but it builds only last two layers which 
+ are different from the first application. In this way we docker can save the disk space by reusing the previous layers 
+ and ceating only new ones which are not reusable from first application.
+
+ 
+
+  
