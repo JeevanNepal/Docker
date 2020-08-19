@@ -7,7 +7,7 @@ volumes, images etc.
 Layered Architrcture:
 
 Dockerfile1 
-                               
+
 FROM Ubuntu                               
 RUN apt-get update python                 
 RUN pip install flask flask-mysql         
@@ -39,7 +39,7 @@ COPY. /opt/slurce-code
 ENTRYPOINT FLASK_APP =  /opt/slurce-code
 
 docker build Dockerfile1 -t
-|
+ |
  |- Layer1: Base Ubuntu Layer      : 0B
  |
  |- Layer2: Changes in apt packages: 0B
@@ -51,9 +51,35 @@ docker build Dockerfile1 -t
  |- Layer5: update Entrypoint      : 0 KB
 
  As docker uses the same firat three layers from previous application, it will not build the first three layers but it builds only last two layers which 
- are different from the first application. In this way we docker can save the disk space by reusing the previous layers 
- and ceating only new ones which are not reusable from first application.
+ are different from the first application. In this way docker can save the disk space by reusing the previous layers 
+ and updating the latest source code for the application.
 
- 
 
+ COPY-ON-WRITE Mechanism:
+
+                       -----------------------------------------
+                       |            Read/write                 |
+  Container Layer      |                                       |
+                       | app.py                       temp.txt |
+                       |                                       |                                      
+                        ----------------------------------------
+
+
+                       -----------------------------------------
+                       |            Read only                  |
+Image Layer            |                                       |
+                       | app.py                       temp.txt |
+                       |                                       |                                      
+                        ---------------------------------------- 
+If we want to modify the file inside the container for the already build image, than a copy of the original file will be 
+created which has the read/write permission and we can modify in that instead of original image file.
+
+
+How to persist those data of the imagess we duild before it gets destroyed?
+volumes:
+
+To persist a data we can add persistant volume to the container.
+To do this first we need to create a volume using docker volume create command.
+   When we run the "docker volume create command data_volume" it creates a folder call data_volume under the /var/lib/docker under that volume directory.
+   Than when we run           
   
