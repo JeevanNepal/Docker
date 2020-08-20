@@ -80,6 +80,27 @@ volumes:
 
 To persist a data we can add persistant volume to the container.
 To do this first we need to create a volume using docker volume create command.
-   When we run the "docker volume create command data_volume" it creates a folder call data_volume under the /var/lib/docker under that volume directory.
-   Than when we run           
+   When we run the "docker volume create command data_volume" it creates a folder call data_volume under the
+    /var/lib/docker under that volume directory.
+   Than when we run the docker container using the docker run command we xould mount this volume inside the docker container
+   read write layer using the -v option : docker run -v data_volume:/var/lib/mysql mysql
+
+   This will create a new container and mount the data_volume we created into /var/lib/mysql folder inside the container
+
+
+   Docker has 2 mounts: volume mount & bind mount.
+
+   volume mount mounts a volume from the volume directory and bind mounts mounts a directory from any location on the docker 
+   host.     
+
+   -v is the old format, we can use the latest one which is --mount: docker run \ -- mount type:binf; source:data/mysql
+   target:  /var/lib/mysql mysql.
+
+   Some of the common storage drivers are:
+   1. AUFS
+   2. ZFS
+   3. BTRFS
+   4. Device Mapper
+   5. Overlay
+   6. Overlay2
   
