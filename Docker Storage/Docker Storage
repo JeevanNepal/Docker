@@ -103,4 +103,3 @@ To do this first we need to create a volume using docker volume create command.
    4. Device Mapper
    5. Overlay
    6. Overlay2
-  
