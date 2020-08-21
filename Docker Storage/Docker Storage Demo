@@ -1,0 +1,68 @@
+We can see the default folder structure maintained by docker: ls -l /var/lib/docker
+
+[root@localhost redhat1]# ls -l /var/lib/docker
+total 52
+drwx------.   2 root root    24 Apr 21 10:48 builder
+drwx--x--x.   4 root root    92 Apr 21 10:48 buildkit
+drwx------.  47 root root  4096 Aug 16 21:03 containers
+drwx------.   3 root root    22 Apr 21 10:48 image
+drwxr-x---.   3 root root    19 Apr 21 10:48 network
+drwx------. 312 root root 28672 Aug 21 22:09 overlay2
+drwx------.   4 root root    32 Apr 21 10:48 plugins
+drwx------.   2 root root     6 Aug 21 22:08 runtimes
+drwx------.   2 root root     6 Apr 21 10:48 swarm
+drwx------.   2 root root     6 Aug 21 22:09 tmp
+drwx------.   2 root root     6 Apr 21 10:48 trust
+drwx------.  60 root root  8192 Aug 11 13:50 volumes
+
+
+docker info | more: It lists the the info about the docker installed in this system:
+[root@localhost redhat1]# docker info
+Client:
+ Debug Mode: false
+
+Server:
+ Containers: 45
+  Running: 0
+  Paused: 0
+  Stopped: 45
+ Images: 73
+ Server Version: 19.03.12
+ Storage Driver: overlay2
+  Backing Filesystem: xfs
+  Supports d_type: true
+  Native Overlay Diff: true
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog
+ Swarm: inactive
+ Runtimes: runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: 7ad184331fa3e55e52b890ea95e65ba581ae3429
+ runc version: dc9208a3303feef5b3839f4323d9beb36df0a9dd
+ init version: fec3683
+ Security Options:
+  seccomp
+   Profile: default
+ Kernel Version: 3.10.0-1127.13.1.el7.x86_64
+ Operating System: CentOS Linux 7 (Core)
+ OSType: linux
+ Architecture: x86_64
+ CPUs: 1
+ Total Memory: 2.287GiB
+ Name: localhost.localdomain
+ ID: Y4DA:RNMK:TTFG:PVQ3:DGLA:CPGY:SU3K:ZBUK:CX7F:CUL3:EAS3:64ZS
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ Registry: https://index.docker.io/v1/
+ Labels:
+ Experimental: false
+ Insecure Registries:
+  127.0.0.0/8
+ Live Restore Enabled: false
+
+
