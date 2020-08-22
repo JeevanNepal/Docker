@@ -66,7 +66,7 @@ Commmand to remove docker images by force: docker rmi -f image(name).
  
  Run Command: Used to run the commands.
  
- attach & detach commands.
+ attach & detach commands:
  attach command is used to run the docker container in foregroumf and docker detach command is used to run the 
  docker container in backgroung.
 
@@ -77,18 +77,19 @@ docker pull command:
 It pulls the images of the os but does not run it.
 
 If we want to run the command inside the container than use the following:
-1. Ientify the container.
+1. Identify the container.
 2. docker exec (container ID) cat /etc/*release*
 
 TAG:latest
 It is used to run the other versions of the OS. Ex: docker run redis 4.0 instead of the latest version 5.0.
 
 
-exec runs a command inside the crunning container.
+exec runs a command inside the running container.
 
-Docker Has two editions:
+Docker has two editions:
 Community & Enterprise Edition. 
 
+----------------------------------------------------------------------------------------------------------------
 
 How to create docker image of our own?
 First of all install any OS in my case it's Python using Ubuntu OS.
