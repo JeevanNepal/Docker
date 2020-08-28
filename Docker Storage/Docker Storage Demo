@@ -87,7 +87,18 @@ We will build my-simple webapp as it is not abailable locally.
 run: docker duild . 
 
 Now we will create a new version of application and it is a copy of the previous application: app2.py
-As we changed the application name we need to change the docker file name as well: dockerlife2
+
+We will copy the content of the dockerfile to dockfile2 and edit it.
+As we changed the application name we need to change the docker file name as well: dockerfile2
+
+FROM ubuntu:17.04
+RUN apt-get update && apt-get install -y python python-pip
+RUN pip install flask
+COPY app2.py /opt/
+ENTRYPOINT FLASK_APP=/opt/app2.py flask run --host=0.0.0.0 --port=8080
+
+Now run the docker build . command to duild the imahe of 2nd application and it picks up by default the dockerfile2 and runs to create image of it.
+
 
 
 
