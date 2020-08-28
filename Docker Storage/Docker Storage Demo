@@ -109,7 +109,7 @@ and build the application, but take from 4th step it is not same as in first ima
 re-creates the other steps till 10th step.
 
 If we want to see the actual disk usage by images than type the below command.
-docker system df 
+docker system df :   It omits duplicates.
 
 
 
