@@ -86,7 +86,10 @@ ENTRYPOINT FLASK_APP=app.py flask run --host=0.0.0.0
 We will build my-simple webapp as it is not abailable locally.
 run: docker duild . 
 
-Now we will make the copy of the application: app.py
+Now we will create a new version of application and it is a copy of the previous application: app2.py
+As we changed the application name we need to change the docker file name as well: dockerlife2
+
+
 
 
 
