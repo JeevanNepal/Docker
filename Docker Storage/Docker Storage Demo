@@ -108,6 +108,9 @@ Suppose if we have 10 steps to build the application for the first image all of 
 and build the application, but take from 4th step it is not same as in first image build, than even if the other following layers after 4 are same as in first image, but docker 
 re-creates the other steps till 10th step.
 
+If we want to see the actual disk usage by images than type the below command.
+docker system df 
+
 
 
 
