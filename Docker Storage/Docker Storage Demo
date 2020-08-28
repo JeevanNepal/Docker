@@ -112,5 +112,8 @@ If we want to see the actual disk usage by images than type the below command.
 docker system df :   It omits duplicates.
 
 
+If you want to see all the disk space usage by all the images than type the below command.
+docker system df -v
+
 
 
