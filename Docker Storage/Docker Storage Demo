@@ -100,7 +100,13 @@ ENTRYPOINT FLASK_APP=/opt/app2.py flask run --host=0.0.0.0 --port=8080
 Now run the docker build . -f dockerfile2 -t for tag name (to specify the file name)command to duild the imahe of 2nd application and it picks up by default the
 dockerfile2 and runs to create image of it.
 
+Here we can see that the layered architecture comes in handy:
+The image for dockerfile2 is duild but it duild real quick as docker did not build the first three layers as they were already build. It just reuded them to build the second
+application. And all those layers are taken from cache.
 
+Suppose if we have 10 steps to build the application for the first image all of them will be created by docker, but if we create the 2nd application docker will use from cache
+and build the application, but take from 4th step it is not same as in first image build, than even if the other following layers after 4 are same as in first image, but docker 
+re-creates the other steps till 10th step.
 
 
 
