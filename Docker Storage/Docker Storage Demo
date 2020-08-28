@@ -86,5 +86,7 @@ ENTRYPOINT FLASK_APP=app.py flask run --host=0.0.0.0
 We will build my-simple webapp as it is not abailable locally.
 run: docker duild . 
 
+Now we will make the copy of the allpication: app.py
+
 
 
