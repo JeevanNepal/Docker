@@ -97,7 +97,7 @@ RUN pip install flask
 COPY app2.py /opt/
 ENTRYPOINT FLASK_APP=/opt/app2.py flask run --host=0.0.0.0 --port=8080
 
-Now run the docker build . command to duild the imahe of 2nd application and it picks up by default the dockerfile2 and runs to create image of it.
+Now run the docker build . -f dockerfile2 -t for tag name (to specify the file name)command to duild the imahe of 2nd application and it picks up by default the dockerfile2 and runs to create image of it.
 
 
 
