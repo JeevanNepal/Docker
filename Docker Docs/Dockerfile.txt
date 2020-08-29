@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     > create a directory
     > create a file inside the directory eg, my-simple-webapp.
-    > paste the source code of hte webapp inside the file.
+    > paste the source code of the webapp inside the file.
 
     Now, we need to run the doocker build command.
     type: docker build .  , it will start to buil the image.
