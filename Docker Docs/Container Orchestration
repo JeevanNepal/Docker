@@ -1,0 +1,4 @@
+Container Orchestration:
+Container orchestration automates the deployment, management, scaling, and networking of containers. ... 
+Container orchestration can be used in any environment where you use containers. 
+It can help you to deploy the same application across different environments without needing to redesign it.
