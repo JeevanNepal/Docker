@@ -2,3 +2,19 @@ Docker Swarm
 A Docker Swarm is a group of either physical or virtual machines that are running the Docker application and that
  have been configured to join together in a cluster. ... The activities of the cluster are controlled by a swarm 
  manager, and machines that have joined the cluster are referred to as nodes.
+
+ It allows us to conbine multiple docker machines into a single cluster. It take care of application instances into 
+ separate host for high availability & load balancing across different systems.
+
+                                      Swarm Setup:
+
+Docker swarm has 1 swarm manager and other workers, run docker swarm init command to initialize the swarm manager.
+
+The output of the swarm command can be run to other workers swarm nodes to join the manager.
+
+
+                                      Docker Service:
+
+Docker services are one o more instances of a single application or service that runs across the nodes in the swarm                                        
+cluster.
+
