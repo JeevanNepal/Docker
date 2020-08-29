@@ -6,9 +6,13 @@ When the docker is installed, it created 3 networks automatically.bridge, none a
 Bridge is the default network a container gets attached to.
 
 1. Bridge Network: It is a private internal network created by docker on the host.
- Container gets attached by default and they get an internal IP addredd usually in the range 172.17 .... series.
+ Container gets attached by default and they get an internal IP address usually in the range 172.17 .... series.
  They can access each other using this IP address.
  
  To access any of this container from the outside world, map the ports of these containers to ports on the docker host.
 
  Another way to access the container is to associate the container to the network host. 
+
+                          User Defined Network:
+We can create our own internal network by using the command docker network create \ and specify the driver which is bridge
+in this case and the subnet(182.17.2.1) followed by the custom isolated network.
