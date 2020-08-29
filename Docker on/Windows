@@ -2,3 +2,20 @@ DOCKER on WINDOWS
 
 1. Docker on windows using docker toolbox.
 2. Docker desktop for windows.
+
+
+                                          Docker Toolbox:
+
+Docker toolbox contains a set of toolbox such as:
+Oracle virtualbox
+Docker engine
+Docker machine
+Docker Compose
+Kitematic GUI
+
+
+                                          Windows Conainers:
+
+Windows Server                                                                          Hyper-v Isolation
+It has a single kernal of underlying host                                      It has an isolated each kernel for the 
+                                                                               underline host.
