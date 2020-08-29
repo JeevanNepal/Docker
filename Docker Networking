@@ -1,8 +1,14 @@
-When the docker in installed, it created 3 networks automatically.bridge, none and host.
+DOCKER NETWORKING:
+
+Bridge                             None                                 Host 
+
+When the docker is installed, it created 3 networks automatically.bridge, none and host.
 Bridge is the default network a container gets attached to.
 
 1. Bridge Network: It is a private internal network created by docker on the host.
  Container gets attached by default and they get an internal IP addredd usually in the range 172.17 .... series.
  They can access each other using this IP address.
  
- To access any of this container from the outside world, map the ports of these containers
+ To access any of this container from the outside world, map the ports of these containers to ports on the docker host.
+
+ Another way to access the container is to associate the container to the network host. 
