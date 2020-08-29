@@ -18,5 +18,9 @@ The output of the swarm command can be run to other workers swarm nodes to join 
 Docker services are one or more instances of a single application or service that runs across the nodes in the swarm                                        
 cluster.
 
+
+NOTE: docker service command must be run on the swarm mamager node and not on the worker nodes.
+
 docker service create: It is the command to create docker services for which image name should be provided.
+replicas=8, this is the number of instanxe which specifies to be runned on across the cluster.
 
