@@ -8,3 +8,13 @@ It is a tool that performs OS level virtualisation, also known as containerizati
 Befor docker, many users faces the problem that a particular code is rinning in the developer's system but not on the user's system.
 It was forst released in march 2013. It is developed by Salomon Hykes & Sebastian Pahl.
 It is a set of platform as a service that uses O.S level virtualization whereas VMware uses Hardware level virtualisation.
+
+
+
+Disadvantages of Docker:
+-----------------------
+Docker is not a good soluytion for application that requires ricj GUI.
+Difficult to manage large amoubt of containers.
+It does not porvide cross-plarform compatibility menas if an application is designed to run in a docker container on windows, then it can't run on linux on vice-versa.
+Docker is suitable when the development OS and the testing OS are same, if the OS are different then we should use VM.
+No solution for dara recovery and backup.
