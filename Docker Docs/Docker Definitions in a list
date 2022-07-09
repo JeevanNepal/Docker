@@ -3,3 +3,6 @@ It uses container on the host OS to run aplliciations. It allows applications to
 We can install dpcker on any O.S but docker engine runs natively on linux distribution.
 It is written in go lanhguage.
 It is a tool that performs OS level virtualisation, also known as containerization.
+Befor docker, many users faces the problem that a particular code is rinning in the developer's system but not on the user's system.
+It was forst released in march 2013. It is developed by Salomon Hykes & Sebastian Pahl.
+It is a set of platform as a service that uses O.S level virtualization whereas VMware uses Hardware level virtualisation.
