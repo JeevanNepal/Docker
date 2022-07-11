@@ -1,0 +1,11 @@
+Docker Container:
+----------------
+Container hold the entire packages that is needed to run the applications.
+
+Container is like a Virtual Machine.
+
+
+Container Orchestration:
+Container orchestration automates the deployment, management, scaling, and networking of containers. ... 
+Container orchestration can be used in any environment where you use containers. 
+It can help you to deploy the same application across different environments without needing to redesign it.
