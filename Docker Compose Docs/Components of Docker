@@ -1,1 +1,11 @@
-Docker
+DOCKER DAEMON:
+-------------
+
+Docker daemon runs on the host OS.
+It is responsible for running containers to manage docker services.
+Docker daemon can communicate with other daemons.
+
+
+DOCKER CLIENT:
+-------------
+
