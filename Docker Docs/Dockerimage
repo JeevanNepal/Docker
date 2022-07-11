@@ -109,4 +109,11 @@ docker run -it ubuntu bash for a longer time/ -i: standard input, t: terminal.
 
 How to create docker images?
 
-We can created docker imaged by creatinf the image of our own.
+We can created docker imaged by creating the image of our own.
+
+
+Three ways to create docker images:
+-----------------------------------
+1:- Create images from docker hub.
+2:- Created image from docker file.
+3:- Create image from existing docker conatiners.
