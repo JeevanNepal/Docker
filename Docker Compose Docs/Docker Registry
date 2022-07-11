@@ -3,5 +3,13 @@ A registry is a storage and content delivery system, holding named Docker images
 versions. ... Users interact with a registry by using docker push and pull commands. Example: docker pull 
 registry-1.docker.io/distribution/registry:2.1 . Storage itself is delegated to drivers.
 
+
 It's a central repository of all docker images.
+
+It has two types of registery:
+1> Public Registry: - Public registery is alos called as docker hub.
+
+2> Private Registry:- It is used to share images within the exterprise.
+
+
 
