@@ -114,6 +114,6 @@ We can created docker imaged by creating the image of our own.
 
 Three ways to create docker images:
 -----------------------------------
-1:- Create images from docker hub.
+1:- Create/bring images from docker hub.
 2:- Created image from docker file.
 3:- Create image from existing docker conatiners.
