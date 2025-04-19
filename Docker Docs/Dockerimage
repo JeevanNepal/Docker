@@ -117,3 +117,10 @@ Three ways to create docker images:
 1:- Create/bring images from docker hub.
 2:- Created image from docker file.
 3:- Create image from existing docker conatiners.
+
+
+How to stop docker containner:
+
+docker stop (container name)
+
+docker image - list images in system
